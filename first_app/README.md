@@ -1,21 +1,13 @@
-# first_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Dart -  A language built by google
+Flutter is a framwork of Dart.
 
 
 To generate APK :-
 flutter build apk --release
+
+Everthing in flutter is a widgets
+1. Void is used for the functions which returns nothing.
+2. Scaffold widget is used to create basic layouts of the app and it ensures the app follows the matrial design guidelines.
+3. Container (a widget) is used to add more configuration (like styling) to child widgets.
+4. "@override" is used to override the method in sub class that comes from super class (like extands) 
 
