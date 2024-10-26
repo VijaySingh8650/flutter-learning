@@ -6,7 +6,7 @@ void main() {
 //   print(checkClass.greetings); error
   
   print(Constants.greetings);
-  print(Constants().message); //here new instance will be created So constructor will be invoked.
+//   print(Constants().message); //here new instance will be created So constructor will be invoked.
   
 //   checkClass.setGreetings = "Good Afternoon, Vijay";
   
@@ -19,7 +19,7 @@ void main() {
   print(Constants.greetings);
 //   print(checkClass.greetings); //error
 
-  
+   print(Constants.giveMeSomeValues());
   
 }
 
@@ -38,6 +38,11 @@ class Constants {
     
     greetings = greet;
     
+  }
+  
+  //static methods 
+  static int giveMeSomeValues (){
+    return 10;
   }
 }
 
