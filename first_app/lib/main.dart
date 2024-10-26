@@ -7,7 +7,7 @@ void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(
-        body: GradientContainer()
+        body: GradientContainer(Colors.black26, Colors.black38)
       ),
     ),
   ); //calling a function - It needs a widget(building blocks like button, text and many more)

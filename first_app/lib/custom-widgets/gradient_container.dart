@@ -3,11 +3,14 @@ import 'package:flutter/material.dart'; //runApp function comes from here
 
 
 Alignment? startAlignment; //it can be of type Alignment or null
-var endAlignment = Alignment.bottomLeft;
+const endAlignment = Alignment.bottomLeft;
 
 //custom widgets
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key}); //for public constructor, key is needed
+  const GradientContainer(this.color1, this.color2, {super.key});
+
+  final Color color1;
+  final Color color2;
 
   @override //annotation
   Widget build(context){
@@ -16,16 +19,13 @@ class GradientContainer extends StatelessWidget {
     return Container(
       decoration:  BoxDecoration(
         gradient: LinearGradient(
-          colors: const [
-            Color.fromARGB(255, 11, 1, 29),
-            Color.fromARGB(255, 43, 2, 114)
-          ],
+          colors:  [color1, color2],
           begin: startAlignment ?? Alignment.topRight,
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: TextContainer(),
+      child:  const Center(
+        child: TextContainer("Hello World!"),
       ),
     );
   }
