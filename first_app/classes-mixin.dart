@@ -2,12 +2,13 @@
 
 void main() {
   
- //Mixin - One class can inheritate properties & methods of different-different classes.
+ //Mixin - One class can inheritate properties & methods of different-different classes. They don't ccreate any instances.
   
   Animal anim = Animal();
   anim.jumping;
   anim.fn();
   anim.jumpFun();
+  print(anim.isScreaming);
   
 }
 
@@ -23,7 +24,11 @@ mixin JumpingClass{
   }
 }
 
-class Animal with Jump, JumpingClass{
+mixin Scream {
+  bool isScreaming = false;
+}
+
+class Animal with Jump, JumpingClass, Scream{
   
   void fn (){
     print(jumping); 
